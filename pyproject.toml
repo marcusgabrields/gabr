@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "gabr-backend"
+version = "0.1.1"
+description = "gabr backend"
+authors = []
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+django = "^3.0.4"
+django-webpack-loader = "^0.7.0"
+
+[tool.poetry.dev-dependencies]
+django-debug-toolbar = "^2.0"
+django-silk = "^3.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
