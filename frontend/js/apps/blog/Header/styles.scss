@@ -1,0 +1,53 @@
+@import '../../../../sass/variables';
+
+.blog-top-section {
+  width: 100%;
+  background-color: $primaryYellow;
+  color: $primaryBlack;
+  height: 400px;
+  position: relative;
+
+  >.sticky-bottom {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    padding: 0px 20px;
+
+    >.links {
+      width: 100%;
+      overflow: hidden;
+      overflow-x: auto;
+
+      >.links-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        >.link {
+          color: $primaryBlack;
+          text-decoration: none;
+          margin-right: 20px;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    >.social {
+      width: 100%;
+      text-align: right;
+
+      >.link {
+        color: $primaryBlack;
+      }
+
+      >.link:first-child {
+        margin-right: 16px;
+      }
+    }
+  }
+}

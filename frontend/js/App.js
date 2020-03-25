@@ -1,6 +1,12 @@
 import React from 'react';
-import {hot} from "react-hot-loader";
+import {hot} from 'react-hot-loader';
 
-const App = () => <h1>Hello!</h1>;
+import Blog from './apps/blog/Blog';
+
+const App = () => (
+  <>
+    <Blog />
+  </>
+);
 
 export default hot(module)(App);
