@@ -1,11 +1,13 @@
 import React from 'react';
 
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaTelegram } from 'react-icons/fa';
+import { FiMail } from 'react-icons/fi';
+
 
 import './styles.scss';
 
 const Header = () => (
-  <section className='blog-top-section'>
+  <div className='blog-top-section'>
     <div className='main-content'>
       <h2>gab<span>r</span></h2>
       <p>
@@ -22,11 +24,38 @@ const Header = () => (
         </div>
       </div>
       <div className='social'>
-        <a className='link' href="#"><FaGithub /></a>
-        <a className='link' href="#"><FaLinkedin /></a>
+        <span>QUER FALAR COMIGO?</span>
+        <a
+          className='link'
+          href='https://web.telegram.org/#/im?p=@marcusgabrields'
+          target='_blank'
+        >
+          <FaTelegram />
+        </a>
+        <a
+          className='link'
+          href='mailto:gabriel@gabr.me'
+          target='_top'
+        >
+          <FiMail />
+        </a>
+        <a
+          className='link'
+          href='https://www.linkedin.com/in/marcus-gabriel-dantas/'
+          target='_blank'
+        >
+          <FaLinkedin />
+        </a>
+        <a
+          className='link'
+          href='https://github.com/marcusgabrields'
+          target='_blank'
+        >
+          <FaGithub />
+        </a>
       </div>
     </div>
-  </section>
+  </div>
 )
 
 export default Header
