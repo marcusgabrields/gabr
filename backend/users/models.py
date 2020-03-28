@@ -16,7 +16,7 @@ class User(AbstractBaseUser, PermissionsMixin, TimeStampedModel):
 
     is_active = models.BooleanField(
         default=True,
-        help_text=_('Designates whether this user shold be treated as '
+        help_text=_('Designates whether this user should be treated as '
                     'active. Unselect this instead of deleting accounts.'))
 
     objects = UserManager()
