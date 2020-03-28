@@ -28,9 +28,11 @@ INSTALLED_APPS = [
 
     'debug_toolbar',
     'silk',
+    'rest_framework',
 
     'common',
     'users',
+    'blog',
 ]
 
 MIDDLEWARE = [
