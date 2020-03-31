@@ -20,11 +20,10 @@
       margin-bottom: 16px;
 
       >.header-image {
-        border: 1px solid $yellow2;
         width: 100%;
         height: 172px;
-        background-image: url('https://miro.medium.com/max/2402/1*Qdx2MMrjk-mHxFCLVR9Otw.png');
-        background-position: center;
+        background: rgb(252,227,115);
+        background: linear-gradient(320deg, rgba(252,227,115,1) 0%, rgba(253,244,204,1) 100%);
         background-size: cover;
       }
     }

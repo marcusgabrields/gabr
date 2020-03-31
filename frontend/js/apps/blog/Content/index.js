@@ -28,7 +28,16 @@ class Content extends React.Component {
             Array.isArray(articles) && articles.map((article) => (
               <article className='blog-card'>
                 <header className='header'>
-                  <div className='header-image'></div>
+                  {typeof(article.photo)}
+                  <div
+                    style={
+                      article.photo === null ? {} : {
+                        backgroundImage: `url('${article.photo}')`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center'
+                      }
+                    }
+                    className='header-image'></div>
                 </header>
                 <div className='body'>
                   <div className='title'>
@@ -38,7 +47,15 @@ class Content extends React.Component {
                     { article.subtitle }
                   </div>
                   <div className='avatar'>
-                    <div className='image'></div>
+                    <div
+                      style={
+                        article.author.avatar === null ? {} : {
+                          backgroundImage: `url('${article.author.avatar}')`,
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center'
+                        }
+                      }
+                      className='image'></div>
                     <div className='info-container'>
                       <span className='name'>
                         { article.author === null ? 'Anônimo' : article.author.name }
