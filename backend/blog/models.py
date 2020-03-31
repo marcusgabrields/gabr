@@ -13,6 +13,12 @@ class Article(TimeStampedModel):
     publish_date = models.DateField(_('publish date'))
     reading_time = models.PositiveSmallIntegerField(_('reading time'))
     draft = models.BooleanField(_('draft'), default=True)
+    author = models.ForeignKey(
+        'perfil.Perfil',
+        on_delete=models.SET_NULL,
+        verbose_name=_('author'),
+        null=True,
+    )
 
     def __str__(self):
         return self.title
