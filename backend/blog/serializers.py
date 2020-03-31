@@ -13,4 +13,4 @@ class ArticleSerializer(serializers.ModelSerializer):
         model = Article
         lookup_field = 'slug'
         fields = ['slug', 'title', 'subtitle', 'publish_date', 'reading_time',
-                  'author']
+                  'author', 'photo']

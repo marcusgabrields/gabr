@@ -7,6 +7,7 @@ from common.models import TimeStampedModel
 class Article(TimeStampedModel):
 
     slug = models.SlugField(_('slug'), max_length=300)
+    photo = models.URLField(_('photo'), null=True)
     title = models.CharField(_('title'), max_length=255)
     subtitle = models.TextField(_('subtitle'))
     content = models.TextField(_('content'))

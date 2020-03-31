@@ -13,6 +13,7 @@ class Perfil(TimeStampedModel):
         verbose_name=_('user'),
     )
     name = models.CharField(_('name'), max_length=255)
+    avatar = models.URLField(_('avatar'), null=True)
 
     def __str__(self):
         return self.name
