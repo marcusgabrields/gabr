@@ -6,6 +6,7 @@ from common.models import TimeStampedModel
 
 class Perfil(TimeStampedModel):
 
+    slug = models.SlugField(_('slug'), max_length=300, unique=True)
     user = models.OneToOneField(
         'users.User',
         on_delete=models.CASCADE,
