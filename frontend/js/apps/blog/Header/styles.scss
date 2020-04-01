@@ -62,13 +62,17 @@
 
         >.link {
           color: $yellow1;
+          background-color: transparent;
           text-decoration: none;
           margin-right: 24px;
           white-space: nowrap;
           font-size: 14px;
           font-weight: 400;
+          border: none;
+          outline: none;
           border-bottom: 2px solid transparent;
           transition: border-bottom 0.3s;
+          text-transform: uppercase;
 
           &:hover {
             border-bottom: 2px solid $yellow1;

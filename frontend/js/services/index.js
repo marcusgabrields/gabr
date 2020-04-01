@@ -1,3 +1,4 @@
 import ArticleService from './ArticleService';
+import CategoryService from './CategoryService';
 
-export { ArticleService }
+export { ArticleService, CategoryService };

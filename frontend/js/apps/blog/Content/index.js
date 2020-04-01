@@ -1,9 +1,6 @@
 import React from 'react';
 
-import Loader from 'react-loaders'
-
 import './styles.scss';
-
 
 class Content extends React.Component {
   constructor(props) {
@@ -18,7 +15,7 @@ class Content extends React.Component {
         {
           pageLoading && (
             <div className='loader-wrapper'>
-              <div class="lds-ripple"><div></div><div></div></div>
+              <div className='lds-ripple'><div></div><div></div></div>
             </div>
           )
         }
@@ -26,13 +23,12 @@ class Content extends React.Component {
         <div className='blog-articles-container'>
           {
             Array.isArray(articles) && articles.map((article) => (
-              <article className='blog-card'>
+              <article className='blog-card' key={article.id}>
                 <header className='header'>
-                  {typeof(article.photo)}
                   <div
                     style={
                       article.photo === null ? {} : {
-                        backgroundImage: `url('${article.photo}')`,
+                        backgroundImage: `url('${ article.photo }')`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center'
                       }
