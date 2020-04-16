@@ -23,7 +23,7 @@ class Content extends React.Component {
         <div className='blog-articles-container'>
           {
             Array.isArray(articles) && articles.map((article) => (
-              <article className='blog-card' key={article.id}>
+              <article className='blog-card' key={ article.id }>
                 <header className='header'>
                   <div
                     style={
@@ -37,7 +37,7 @@ class Content extends React.Component {
                 </header>
                 <div className='body'>
                   <div className='title'>
-                    { article.title }
+                    <a className='link' href="#">{ article.title }</a>
                   </div>
                   <div className='sub-title'>
                     { article.subtitle }

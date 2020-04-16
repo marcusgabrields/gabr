@@ -6,7 +6,7 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog/', include('blog.urls')),
+    path('v1/blog/', include('blog.urls')),
     path(
         '',
         TemplateView.as_view(template_name='myapp/itworks.html'),

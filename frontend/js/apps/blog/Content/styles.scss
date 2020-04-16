@@ -34,6 +34,10 @@
         font-size: 22px;
         font-weight: 600;
         color: $primaryBlack;
+
+        >.link {
+          color: inherit;
+        }
       }
 
       >.sub-title {
